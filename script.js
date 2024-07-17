@@ -1,10 +1,10 @@
 $(document).ready(function () {
   $(window).scroll(function () {
-    //  sticky navbar on scroll script  //
+    //  sticky navbar2 on scroll script  //
     if (this.scrollY > 20) {
-      $(".navbar").addClass("sticky");
+      $(".navbar2").addClass("sticky");
     } else {
-      $(".navbar").removeClass("sticky");
+      $(".navbar2").removeClass("sticky");
     }
 
     //  scroll-up button show/hide script  //
@@ -23,16 +23,16 @@ $(document).ready(function () {
     $("html").css("scrollBehavior", "auto");
   });
 
-  $(".navbar .menu li a").click(function () {
+  $(".navbar2 .menu li a").click(function () {
     //  Smooth scroll on Menu Items click  //
 
     $("html").css("scrollBehavior", "smooth");
   });
 
-  //  Toggle Navbar  //
+  //  Toggle navbar2  //
 
   $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
+    $(".navbar2 .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
   });
 

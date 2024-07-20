@@ -63,7 +63,8 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true
   });
-
+  
+  
   //  Owl Carousel  //
 
   $(".carousel").owlCarousel({
@@ -88,3 +89,14 @@ $(document).ready(function () {
     }
   });
 });
+var buttons = document.querySelectorAll('.open-link-btn');
+
+        // Add a click event listener to each button
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Get the URL from the data attribute
+                var url = button.getAttribute('data-url');
+                // Open the URL in a new tab
+                window.open(url, '_blank');
+            });
+        });
